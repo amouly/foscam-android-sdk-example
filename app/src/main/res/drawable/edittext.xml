@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:state_focused="true">
+		<shape>
+			<!-- 渐变    -->
+			<gradient
+				android:startColor="#ffffff"
+				android:endColor="#ffffff"
+				android:angle="270" />
+			<!-- 边框宽度及颜色  -->
+			<stroke
+				android:width="2dp"
+				android:color="#23238E" />
+			<!-- 圆边 -->
+			<corners
+				android:radius="3dp" />
+			<!-- 与字体的距离 -->
+			<padding
+				android:left="7dp"
+				android:top="7dp"
+				android:right="7dp"
+				android:bottom="7dp" />
+		</shape>
+
+	</item>
+	<item>
+		<shape>
+			<!-- 渐变    -->
+			<gradient
+				android:startColor="#ffffff"
+				android:endColor="#ffffff"
+				android:angle="270" />
+			<!-- 边框宽度及颜色  -->
+			<stroke
+				android:width="2dp"
+				android:color="#0037bd" />
+			<!-- 圆边 -->
+			<corners
+				android:radius="3dp" />
+			<!-- 与字体的距离 -->
+			<padding
+				android:left="7dp"
+				android:top="7dp"
+				android:right="7dp"
+				android:bottom="7dp" />
+		</shape>
+
+	</item>
+</selector>

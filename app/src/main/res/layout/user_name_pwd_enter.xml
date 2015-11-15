@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	android:layout_width="fill_parent"
+ 	android:layout_height="fill_parent" 
+	android:id="@+id/tab1_layout" 
+
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical">
+	<TableLayout 
+		android:layout_margin="0dip" 
+		android:id="@+id/tab1_layout1" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent">
+					
+		<TableRow 
+			android:id="@+id/TableRow01" 
+			android:layout_marginTop="5dip"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="20dip" >
+			<TextView 
+				android:layout_width="wrap_content"
+				android:textColor="#ffffff"
+			    android:layout_weight="1.0"
+				android:textSize="15dip"
+				android:layout_height="wrap_content"
+				android:width="60dip" 
+				android:text="@string/ipc_info_config_userName" 
+				android:id="@+id/tv_enter_usr_pwd_user">
+			</TextView>
+			<EditText 
+				android:layout_width="fill_parent" 
+				android:background="@drawable/edittext"
+				android:singleLine="true"
+			    android:layout_weight="10.0"
+				android:text=""
+			    android:layout_height="50dip" 
+			    android:id="@+id/ed_enter_usr_pwd_user">
+			 </EditText>
+		</TableRow>
+						
+		<TableRow 
+			android:id="@+id/TableRow02" 
+			android:layout_marginTop="5dip"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="20dip">
+			<TextView 
+				android:layout_width="wrap_content"
+				android:textColor="#ffffff"
+			    android:layout_weight="1.0"
+				android:textSize="15dip"
+				android:layout_height="wrap_content"
+				android:width="60dip" 
+				android:text="@string/ipc_info_config_password" 
+				android:id="@+id/tv_enter_usr_pwd_pwd">
+			</TextView>
+			<EditText 
+				android:layout_width="fill_parent" 
+				android:background="@drawable/edittext"
+				android:singleLine="true"
+			    android:layout_weight="10.0"
+				android:text=""
+			    android:layout_height="50dip" 
+			    android:id="@+id/ed_enter_usr_pwd_pwd">
+			 </EditText>
+		</TableRow>			
+	</TableLayout>
+</LinearLayout>
+
