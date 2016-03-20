@@ -31,7 +31,6 @@ public class VideoView extends View implements Runnable {
     boolean isThreadRun = true;
     boolean restartDecoder = false;
 
-
     byte[] mPixel = new byte[1280 * 720 * 2];
     int[] gotPicture = new int[4];
 
@@ -134,15 +133,13 @@ public class VideoView extends View implements Runnable {
             }
         } else {
             if (bmpMJ != null) {
-                if (vvWidth > vvHeight) //����
-                {
+                if (vvWidth > vvHeight) {
                     if (vvHeight > videoHeight) {
                         canvas.drawBitmap(getVerticalBmp(bmpMJ), 0, (vvHeight - vvWidth * 1.0f / videoWidth * videoHeight) / 2, null);
                     } else {
                         canvas.drawBitmap(getHorizenBmp(bmpMJ), (vvWidth - vvHeight * 1.0f / videoHeight * videoWidth) / 2, 0, null);
                     }
-                } else // ����
-                {
+                } else {
                     canvas.drawBitmap(getVerticalBmp(bmpMJ), 0, (vvHeight - vvWidth * 1.0f / videoWidth * videoHeight) / 2, null);
                 }
             }
@@ -173,7 +170,7 @@ public class VideoView extends View implements Runnable {
                         bmpMJ = BitmapFactory.decodeByteArray(videoStreamData.data, 0, videoStreamData.dataLen);
                         videoWidth = bmpMJ.getWidth();
                         videoHeight = bmpMJ.getHeight();
-                        postInvalidate();  //ʹ��postInvalidate����ֱ�����߳��и��½���
+                        postInvalidate();
                     } else {
                         gotPicture[0] = 0;
                     }
@@ -185,7 +182,7 @@ public class VideoView extends View implements Runnable {
                             videoHeight = gotPicture[3];
                             VideoBit = Bitmap.createBitmap(videoWidth, videoHeight, Bitmap.Config.RGB_565);
                         }
-                        postInvalidate();  //ʹ��postInvalidate����ֱ�����߳��и��½���
+                        postInvalidate();
                     }
                 } else {
                     try {
