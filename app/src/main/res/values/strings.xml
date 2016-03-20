@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SdkDemo</string>
-    
-    <!-- 创建设备列表数据库 -->
+
     <string name="sql_create_device_list_tbl">
 	    CREATE TABLE tb_device_list(
 	    _id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -21,133 +20,133 @@
 	    reserve4 NUMERIC NULL
 		)
 	</string>
-	
-	<string name="drop_sql">drop table if EXISTS tb_device_list;</string>
 
-	 <string name="login_login">Login</string>
-	
-	 <string name="login_error_username_is_empty">User name is empty</string>
-	 <string name="login_remember_me">Remember me</string>
-	 <string name="login_error_user_pwd_error">User name or password error</string>
-	 <string name="login_password">Password</string>
-	 <string name="login_userName">User name</string>
-	 
-	 <string name="btn_OK">OK</string>
-	 <string name="btn_Cancel">Cancel</string>
-	 
-	 <string name="app_exit_title">Exit</string>
-	 <string name="app_exit_warning">Are you sure to exit?</string>
-	 <string name="app_about_title">About</string>
-	 <string name="app_about_info">QCam IPCamera client.\nV1.0.2</string>
-	 
-	 <string name="live_view_exit">Exit</string>
-	 <string name="live_view_audio">Audio</string>
-	 <string name="live_view_talk">Talk</string>
-	 <string name="live_view_snap">Snap</string>
-	 <string name="live_view_device">Device</string>
-	 <string name="live_view_menu_settings">Settings</string>
-	 <string name="live_view_menu_about">About</string>
-	 <string name ="live_view_photo">Photo</string>
-	 <string name ="live_view_no_network_promote">No network connection is availabled</string>
-	 
-	 <string name ="photo_menu_del_cur_pic">Delete current picture</string>
-	 <string name ="photo_menu_del_all_pic">Delete all pictures</string>
-	 
-	 <string name="device_list_back">Return</string>
-	 <string name="device_list_search">Search</string>
-	 <string name="device_list_add">Add</string>
-	 <string name="device_list_title">Device list</string>
-	 <string name="device_list_context_menu_edit">Edit</string>
-	 <string name="device_list_context_menu_del">Delete device</string>
-	 
-	 <string name="device_list_search_title">Searching device</string>
-	 <string name="device_list_search_wait">Please wait a while</string>
-	 <string name="device_list_search_no_dev_found_title">Search result</string>
-	 <string name="device_list_search_no_dev_found">No device found</string>
-	 
-	 <string name="device_list_sel_promote">Please select camera</string>
-	 
-	 <string name="device_list_device_del_title">Delete camera</string>
-	 <string name="device_list_device_del_warning">Are you sure to delete camera:</string>
-	 <string name="device_list_device_del_success">Delete success</string>
-	 
-	 <string name="device_list_device_dev_config_error_title">Error</string>
-	 <string name="device_list_device_dev_config_error_warning">Device config error, IP or UID must be set</string>
-	 <string name="device_list_device_user_name_empty_title">Enter user name and password</string>
-	 
-	 <string name="device_list_menu_clear_device_list">Clear list</string>
-	 
-	 <string name="device_list_add_p2p_device_title">Add P2P device</string>
-	 <string name="device_list_add_p2p_device_error_title">Error</string>
-	 <string name="device_list_add_p2p_device_format_error">UID format error:</string>
-	 <string name="device_list_add_p2p_device_user_empty_warning">User name can not be empty</string>
-	 <string name="device_list_add_p2p_device_already_exist">The device already exist in list</string>
-	 <string name="device_list_add_p2p_device_promote">Place the barcode at the top of camera inside the viewfinder rectangle to scan it </string>
-	 
-	 <string name="ipc_info_config_devType">Camera type</string>
-	 <string name="ipc_info_config_devName">Camera name</string>
-	 <string name="ipc_info_config_ip">IP address</string>
-	 <string name="ipc_info_config_mac">Device ID</string>
-	 <string name="ipc_info_config_streamType">Stream type</string>
-	 <string name="ipc_info_config_webPort">Http port</string>
-	 <string name="ipc_info_config_mediaPort">Media port</string>
-	 <string name="ipc_info_config_userName">User name</string>
-	 <string name="ipc_info_config_password">password</string>
-	 <string name="ipc_info_config_uid">UID</string>
-	 <string name="ipc_info_config_device_type_h264">H264</string>
-	 <string name="ipc_info_config_device_type_mj">MJ</string>
-	 <string name="ipc_info_config_stream_type_main">Main stream</string>
-	 <string name="ipc_info_config_stream_type_sub">Sub stream</string>
-	 <string name="ipc_info_config_save_success">Save success</string>
-	 <string name="ipc_info_config_add_success">Add success</string>
-	 <string name="ipc_info_config_info_not_correct">IP or UID or port infor can not be empty</string>
-	 <string name="ipc_info_config_info_port_format_error">Port format error</string>
-	 <string name="ipc_info_config_info_ip_format_error">IP format error</string>
-	 <string name="ipc_info_config_info_already_exist">The device already exists</string>
-	 
-	 <string name="setting_title">Settings</string>
-	 <string name="setting_user_account_title">Account</string>
-	 <string name="setting_user_account_edit_user_pwd">Change user name or password</string>
-	 <string name="setting_camera_setting_title">Camera</string>
-	 <string name="setting_camera_setting">Change setting</string>
-	 <string name="setting_camera_setting_know_foscam">Know QCam</string>
-	 <string name="setting_camera_setting_visit_foscam">Visit our website</string>
-	 <string name="camera_setting_wireless_setting">Wireless setting</string>
-	 
-	 <string name="change_password_old_name">Old name</string>
-	 <string name="change_password_old_password">Old password</string>
-	 <string name="change_password_new_name">New name</string>
-	 <string name="change_password_new_password">New password</string>
-     <string name="change_password_user_name_empty">User name can not be empty</string>
-	 <string name="change_password_user_pwd_error">User or password error</string>
-	 <string name="change_password_change_success">Change success</string>
-	 
-	 <string name="camera_param_resolution">Resolution</string>
-	 <string name="camera_param_resolution_1080p">1080P</string>
-	 <string name="camera_param_resolution_720p">720P</string>
-	 <string name="camera_param_resolution_vga">VGA</string>
-	 <string name="camera_param_resolution_qvga">QVGA</string>
-	 <string name="camera_param_resolution_qqvga">QQVGA</string>
-	 <string name="camera_param_infra_led_mode">Infra LED mode</string>
-	 <string name="camera_param_infra_led_mode_auto">Auto</string>
-	 <string name="camera_param_infra_led_mode_manual_on">Manual on</string>
-	 <string name="camera_param_infra_led_mode_manual_off">Manual off</string>
-	 
-	 
-	<string name="login_promote_success">Login success</string>
-	<string name="login_promote_fail_usr_pwd_error">User name or password error</string>
-	<string name="login_promote_fail_access_deny">Access deny</string>
-	<string name="login_promote_fail_exceed_max_user">Exceed max user count</string>
-	<string name="login_promote_fail_connect_fail">Can not connect to camera</string>
-	
-	<string name="open_talk_promote_success">Open talk success</string>
-	<string name="open_talk_promote_fail">Already used by another user</string>
-	<string name="close_talk_promote_success">Close talk success</string>
-	<string name="close_talk_promote_fail">Close talk fail</string>
-	
-	<string name="open_audio_promote_success">Start audio</string>
-	<string name="close_audio_promote_success">Stop audio</string>
-	<string name="title_device_list">Device List</string>
-	<string name="action_search_devices">Search Devices</string>
-	<string name="action_add_device">Add Device</string>
+    <string name="drop_sql">drop table if EXISTS tb_device_list;</string>
+
+    <string name="login_login">Login</string>
+
+    <string name="login_error_username_is_empty">User name is empty</string>
+    <string name="login_remember_me">Remember me</string>
+    <string name="login_error_user_pwd_error">User name or password error</string>
+    <string name="login_password">Password</string>
+    <string name="login_userName">User name</string>
+
+    <string name="btn_OK">OK</string>
+    <string name="btn_Cancel">Cancel</string>
+
+    <string name="app_exit_title">Exit</string>
+    <string name="app_exit_warning">Are you sure to exit?</string>
+    <string name="app_about_title">About</string>
+    <string name="app_about_info">QCam IPCamera client.\nV1.0.2</string>
+
+    <string name="live_view_exit">Exit</string>
+    <string name="live_view_audio">Audio</string>
+    <string name="live_view_talk">Talk</string>
+    <string name="live_view_snap">Snap</string>
+    <string name="live_view_device">Device</string>
+    <string name="live_view_menu_settings">Settings</string>
+    <string name="live_view_menu_about">About</string>
+    <string name="live_view_photo">Photo</string>
+    <string name="live_view_no_network_promote">No network connection is availabled</string>
+
+    <string name="photo_menu_del_cur_pic">Delete current picture</string>
+    <string name="photo_menu_del_all_pic">Delete all pictures</string>
+
+    <string name="device_list_back">Return</string>
+    <string name="device_list_search">Search</string>
+    <string name="device_list_add">Add</string>
+    <string name="device_list_title">Device list</string>
+    <string name="device_list_context_menu_edit">Edit</string>
+    <string name="device_list_context_menu_del">Delete device</string>
+
+    <string name="device_list_search_title">Searching device</string>
+    <string name="device_list_search_wait">Please wait a while</string>
+    <string name="device_list_search_no_dev_found_title">Search result</string>
+    <string name="device_list_search_no_dev_found">No device found</string>
+
+    <string name="device_list_sel_promote">Please select camera</string>
+
+    <string name="device_list_device_del_title">Delete camera</string>
+    <string name="device_list_device_del_warning">Are you sure to delete camera:</string>
+    <string name="device_list_device_del_success">Delete success</string>
+
+    <string name="device_list_device_dev_config_error_title">Error</string>
+    <string name="device_list_device_dev_config_error_warning">Device config error, IP or UID must be set</string>
+    <string name="device_list_device_user_name_empty_title">Enter user name and password</string>
+
+    <string name="device_list_menu_clear_device_list">Clear list</string>
+
+    <string name="device_list_add_p2p_device_title">Add P2P device</string>
+    <string name="device_list_add_p2p_device_error_title">Error</string>
+    <string name="device_list_add_p2p_device_format_error">UID format error:</string>
+    <string name="device_list_add_p2p_device_user_empty_warning">User name can not be empty</string>
+    <string name="device_list_add_p2p_device_already_exist">The device already exist in list</string>
+    <string name="device_list_add_p2p_device_promote">Place the barcode at the top of camera inside the viewfinder rectangle to scan it </string>
+
+    <string name="ipc_info_config_devType">Camera type</string>
+    <string name="ipc_info_config_devName">Camera name</string>
+    <string name="ipc_info_config_ip">IP address</string>
+    <string name="ipc_info_config_mac">Device ID</string>
+    <string name="ipc_info_config_streamType">Stream type</string>
+    <string name="ipc_info_config_webPort">Http port</string>
+    <string name="ipc_info_config_mediaPort">Media port</string>
+    <string name="ipc_info_config_userName">User name</string>
+    <string name="ipc_info_config_password">Password</string>
+    <string name="ipc_info_config_uid">UID</string>
+    <string name="ipc_info_config_device_type_h264">H264</string>
+    <string name="ipc_info_config_device_type_mj">MJ</string>
+    <string name="ipc_info_config_stream_type_main">Main stream</string>
+    <string name="ipc_info_config_stream_type_sub">Sub stream</string>
+    <string name="ipc_info_config_save_success">Save success</string>
+    <string name="ipc_info_config_add_success">Add success</string>
+    <string name="ipc_info_config_info_not_correct">IP or UID or port info can not be empty</string>
+    <string name="ipc_info_config_info_port_format_error">Port format error</string>
+    <string name="ipc_info_config_info_ip_format_error">IP format error</string>
+    <string name="ipc_info_config_info_already_exist">The device already exists</string>
+
+    <string name="setting_title">Settings</string>
+    <string name="setting_user_account_title">Account</string>
+    <string name="setting_user_account_edit_user_pwd">Change user name or password</string>
+    <string name="setting_camera_setting_title">Camera</string>
+    <string name="setting_camera_setting">Change setting</string>
+    <string name="setting_camera_setting_know_foscam">Know QCam</string>
+    <string name="setting_camera_setting_visit_foscam">Visit our website</string>
+    <string name="camera_setting_wireless_setting">Wireless setting</string>
+
+    <string name="change_password_old_name">Old name</string>
+    <string name="change_password_old_password">Old password</string>
+    <string name="change_password_new_name">New name</string>
+    <string name="change_password_new_password">New password</string>
+    <string name="change_password_user_name_empty">User name can not be empty</string>
+    <string name="change_password_user_pwd_error">User or password error</string>
+    <string name="change_password_change_success">Change success</string>
+
+    <string name="camera_param_resolution">Resolution</string>
+    <string name="camera_param_resolution_1080p">1080P</string>
+    <string name="camera_param_resolution_720p">720P</string>
+    <string name="camera_param_resolution_vga">VGA</string>
+    <string name="camera_param_resolution_qvga">QVGA</string>
+    <string name="camera_param_resolution_qqvga">QQVGA</string>
+    <string name="camera_param_infra_led_mode">Infra LED mode</string>
+    <string name="camera_param_infra_led_mode_auto">Auto</string>
+    <string name="camera_param_infra_led_mode_manual_on">Manual on</string>
+    <string name="camera_param_infra_led_mode_manual_off">Manual off</string>
+
+
+    <string name="login_promote_success">Login success</string>
+    <string name="login_promote_fail_usr_pwd_error">User name or password error</string>
+    <string name="login_promote_fail_access_deny">Access deny</string>
+    <string name="login_promote_fail_exceed_max_user">Exceed max user count</string>
+    <string name="login_promote_fail_connect_fail">Can not connect to camera</string>
+
+    <string name="open_talk_promote_success">Open talk success</string>
+    <string name="open_talk_promote_fail">Already used by another user</string>
+    <string name="close_talk_promote_success">Close talk success</string>
+    <string name="close_talk_promote_fail">Close talk fail</string>
+
+    <string name="open_audio_promote_success">Start audio</string>
+    <string name="close_audio_promote_success">Stop audio</string>
+    <string name="title_device_list">Device List</string>
+    <string name="action_search_devices">Search Devices</string>
+    <string name="action_add_device">Add Device</string>
 </resources>
